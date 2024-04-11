@@ -4,7 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            List<string> techCompanies = new List<string>();
+            techCompanies.Add("Microsoft");
+            techCompanies.Add("Google");
+            techCompanies.Add("Cognosos");
+            techCompanies.Add("Rocket");
+
+            techCompanies.OrderBy(x => x.Length).ToList().ForEach(x => Console.WriteLine(x));
+
         }
     }
 }
